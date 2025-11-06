@@ -41,6 +41,5 @@ Este laboratório me ajudou a compreender melhor o fluxo de pacotes, a função 
 
 O **IptablesLogLab** é o primeiro passo de uma série de pequenos laboratórios que pretendo criar e publicar no GitHub, com o objetivo de estudar **segurança de redes, firewall, Linux e análise de tráfego** de forma prática e reprodutível.
 
-## Video - Part1
 
 
