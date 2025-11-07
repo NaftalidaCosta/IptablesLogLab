@@ -83,7 +83,7 @@ O pacote contém informações da camada 2 e 3 do modelo OSI. O frame foi recebi
 <img width="1363" height="671" alt="image" src="https://github.com/user-attachments/assets/fdd932c6-e469-4aa3-a272-bce6146df13d" />
 
 
-As 23 horas do dia 6, tentei acessar pela teceira vezes o site alvo e não foi possivel terminar o 3-way handshake e processar o counteúdo do site com êxito.
+As 23 horas do dia 6, tentei acessar pela teceira vezes o site alvo e não foi possivel terminar o 3-way handshake e processar o conteúdo do site com êxito.
  
 Gravei vídeos e tirei fotos de todo o processo — desde a criação da regra, o salvamento e a verificação dos logs — para documentar o comportamento em tempo real.
 Este laboratório me ajudou a compreender melhor o fluxo de pacotes, a função da chain INPUT e como o `iptables` interage com o kernel para registrar eventos.
