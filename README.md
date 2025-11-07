@@ -1,8 +1,8 @@
 # IptablesLogLab
-Criei um laboratório no VirtualBox chamado NetLogLab para testar e demonstrar como registrar tráfego HTTP (porta 80) com iptables e persistir as regras com netfilter-persistent. Gravei os comandos, validei os logs via dmesg e documentei todo o processo para estudo e partilha.
+Criei um laboratório no VirtualBox chamado IptablesLogLab para testar e demonstrar como registrar tráfego HTTP (porta 80) com iptables e persistir as regras com netfilter-persistent. Gravei os comandos, validei os logs via dmesg e documentei todo o processo para estudo e partilha.
 
 
-**IptablesLogLab — HTTP Logging Lab (iptables + VirtualBox)**
+**IptablesLogLab — HTTP Logging Lab (iptables + Vmware Worstation Pro 17)**
 
 ---
 
