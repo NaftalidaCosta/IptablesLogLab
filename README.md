@@ -49,7 +49,7 @@ service netfilter-persistent restart ---> reinicia o serviço "netfilter-persist
 ```
 
 Reiniciei o navegador e acessei novamente o mesmo site de teste. Em seguida, usei o comando:
-# **
+# 
 
 
 https://github.com/user-attachments/assets/bacb399b-811a-473c-8e2a-7937ff3c2920
