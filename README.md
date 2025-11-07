@@ -8,6 +8,11 @@ Criei um laboratório no VirtualBox chamado NetLogLab para testar e demonstrar c
 
 Criei o **iptables**, um laboratório virtual no **Vmware Worstation** que desenvolvi para estudar e demonstrar como funcionam as regras de logging no **iptables** e a persistência de configurações com o **netfilter-persistent**.
 
+
+https://github.com/user-attachments/assets/f8e4de2e-34f6-4dec-b3c5-6da06e63fea2
+
+
+
 Na fase inicial do laboratório, listei as regras do `iptables` e confirmei que não havia nenhuma regra nas chains **INPUT** e **OUTPUT**. Depois acessei o site de teste público `testphp.vulnweb.com` pela porta TCP **80** e o conteúdo foi carregado normalmente — isso serviu como base para validar a conectividade antes da configuração do firewall.
 
 Em seguida, adicionei a seguinte regra de log:
