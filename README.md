@@ -34,6 +34,7 @@ Depois disso, executei a sequência de comandos para salvar e persistir as regra
 https://github.com/user-attachments/assets/1fe2d483-734e-4d87-b8ca-eb3fe5c78371
 >
 *PARTE-2*
+
 https://github.com/user-attachments/assets/5b9f8d51-e86c-434d-8d68-8b1e04ab8506
 
 
