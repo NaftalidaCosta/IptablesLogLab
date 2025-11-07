@@ -62,6 +62,11 @@ dmesg -SHT -l 4 | grep "HTTP" | tail -n 2 ---> Mostra todas as linhas de logs de
 
 Os logs apareceram com sucesso, confirmando que a regra estava a funcionar corretamente.
 
+# Quantos pacotes foram descartados pela regra?
+
+ <img width="1363" height="668" alt="1" src="https://github.com/user-attachments/assets/0a9afb52-7751-46de-bd3e-06c84a044d40" />
+
+ 
 Gravei vídeos de todo o processo — desde a criação da regra, o salvamento e a verificação dos logs — para documentar o comportamento em tempo real.
 Este laboratório me ajudou a compreender melhor o fluxo de pacotes, a função da chain INPUT e como o `iptables` interage com o kernel para registrar eventos.
 
