@@ -9,7 +9,11 @@ Criei um laboratório no VirtualBox chamado NetLogLab para testar e demonstrar c
 Criei o **iptables**, um laboratório virtual no **Vmware Worstation** que desenvolvi para estudar e demonstrar como funcionam as regras de logging no **iptables** e a persistência de configurações com o **netfilter-persistent**.
 
 
-https://github.com/user-attachments/assets/f8e4de2e-34f6-4dec-b3c5-6da06e63fea2
+
+
+https://github.com/user-attachments/assets/d256cb17-6e49-49e1-8bd4-9c1a76cde7ec
+
+
 
 
 
