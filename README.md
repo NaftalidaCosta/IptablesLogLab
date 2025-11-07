@@ -29,6 +29,14 @@ O objetivo dessa regra foi registrar todo tráfego HTTP (porta 80) vindo de serv
 
 Depois disso, executei a sequência de comandos para salvar e persistir as regras:
 
+
+
+https://github.com/user-attachments/assets/1fe2d483-734e-4d87-b8ca-eb3fe5c78371
+
+
+
+
+
 ```bash
 netfilter-persistent save  ---> salva a regra no netfilter de forma persistente.
 netfilter-persistent reload ---> Recarrega as regras salvas.
