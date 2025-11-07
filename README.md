@@ -61,13 +61,23 @@ dmesg -SHT -l 4 | grep "HTTP" | tail -n 2 ---> Mostra todas as linhas de logs de
 ```
 
 Os logs apareceram com sucesso, confirmando que a regra estava a funcionar corretamente.
-
+`` $sudo dmesg -SHT -l 4 | grep "HTTP" | tail -n 2
+[sudo] password for offsec: 
+[qui nov  6 23:30:59 2025] HTTP INCOMING: IN=ens33 OUT= MAC=b3:0c:00:be:59:b4:44:f6:p9:8d:8d:20:01:00 SRC=44.228.249.3 DST=172.22.12.8 LEN=60 TOS=0x00 PREC=0x00 TTL=48 ID=0 DF PROTO=TCP SPT=80 DPT=35726 WINDOW=62643 RES=0x00 ACK SYN URGP=0 
+[qui nov  6 23:31:00 2025] HTTP INCOMING: IN=ens33 OUT= MAC=b3:0c:00:b0:59:b4:08:f6:p9:8d:d4:20:01:00 SRC=44.228.249.3 DST=172.22.12.8 LEN=60 TOS=0x00 PREC=0x00 TTL=47 ID=0 DF PROTO=TCP SPT=80 DPT=35736 WINDOW=62643 RES=0x00 ACK SYN URGP=0 ``
+Os dos ultimos logs da regra difinda anteriormente foram registra no dia 6 de novembro as 23 horas e 32 minutos.
+O pacote contém informações da camada 2 e 3 do modelo OSI. O frame foi recebido pela interface "ens33", o endereço IP de origem é público (Servidor Web) e o IP de destino é um endereço privado (LAN), as bandeiras ou as flags difinidas são "SYN-ACK". Quando eu tentei acessar o domínio alvo a minha máquina enviou um pacote com a flag SYN com destino a porta 80. O servidor respondeu a primeira flag do 3-way Handshake com a porta de destino "35786", mas quando o pacote chegou na interface foi dropado pela regra. 
 # Quantos pacotes foram descartados pela regra?
 
  <img width="1363" height="668" alt="1" src="https://github.com/user-attachments/assets/0a9afb52-7751-46de-bd3e-06c84a044d40" />
+ 140 pacotes foram descartados pela regra.
+ 
+# Teste Final
+
+<img width="1363" height="671" alt="image" src="https://github.com/user-attachments/assets/fdd932c6-e469-4aa3-a272-bce6146df13d" />
 
  
-Gravei vídeos de todo o processo — desde a criação da regra, o salvamento e a verificação dos logs — para documentar o comportamento em tempo real.
+Gravei vídeos e tirei fotos de todo o processo — desde a criação da regra, o salvamento e a verificação dos logs — para documentar o comportamento em tempo real.
 Este laboratório me ajudou a compreender melhor o fluxo de pacotes, a função da chain INPUT e como o `iptables` interage com o kernel para registrar eventos.
 
 O **IptablesLogLab** é o primeiro passo de uma série de pequenos laboratórios que pretendo criar e publicar no GitHub, com o objetivo de estudar **segurança de redes, firewall, Linux e análise de tráfego** de forma prática e reprodutível.
