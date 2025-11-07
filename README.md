@@ -49,6 +49,12 @@ service netfilter-persistent restart ---> reinicia o serviço "netfilter-persist
 ```
 
 Reiniciei o navegador e acessei novamente o mesmo site de teste. Em seguida, usei o comando:
+# **
+
+
+https://github.com/user-attachments/assets/bacb399b-811a-473c-8e2a-7937ff3c2920
+
+
 
 ```bash
 dmesg -SHT -l 4 | grep "HTTP" | tail -n 2 ---> Mostra todas as linhas de logs de nivel 4 (warn), que contém a palavra "HTTP" de forma legível para Humanos 
