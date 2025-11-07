@@ -61,6 +61,8 @@ dmesg -SHT -l 4 | grep "HTTP" | tail -n 2 ---> Mostra todas as linhas de logs de
 ```
 
 Os logs apareceram com sucesso, confirmando que a regra estava a funcionar corretamente.
+
+
 `` $sudo dmesg -SHT -l 4 | grep "HTTP" | tail -n 2
 [sudo] password for offsec: 
 [qui nov  6 23:30:59 2025] HTTP INCOMING: IN=ens33 OUT= MAC=b3:0c:00:be:59:b4:44:f6:p9:8d:8d:20:01:00 SRC=44.228.249.3 DST=172.22.12.8 LEN=60 TOS=0x00 PREC=0x00 TTL=48 ID=0 DF PROTO=TCP SPT=80 DPT=35726 WINDOW=62643 RES=0x00 ACK SYN URGP=0 
